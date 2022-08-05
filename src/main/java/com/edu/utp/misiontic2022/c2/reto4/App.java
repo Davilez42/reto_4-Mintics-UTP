@@ -20,7 +20,7 @@ public class App
             var banco = "Conavi";
             r.proyectosFinanciadosPorBanco(banco);
 
-            var limiteinf = 60_000d;
+            var limiteinf = 60_0000d ;
             r.totalAdeudadoPorProyectosSuperioresALimite(limiteinf);
 
            r.lideresQueMasGastan();
