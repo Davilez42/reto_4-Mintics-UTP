@@ -5,6 +5,7 @@ public class ProyectoBancoVo {
     private String constructora;
     private String ciudad;
     private String clasificacion;
+    private Integer estrato;
     private String lider;
 
     public Integer getId() {
@@ -36,6 +37,17 @@ public class ProyectoBancoVo {
     }
     public String getLider() {
         return lider;
+    }
+    public Integer getEstrato() {
+        return estrato;
+    }
+    public void setEstrato(Integer estrato) {
+        this.estrato = estrato;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%3d %-25s %-20s %-15s %7d %-30s", id, constructora, ciudad, clasificacion, estrato, lider);
     }
     
 }
